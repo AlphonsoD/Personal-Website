@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      
+      <section className='section' id='introduction'>
+        <div className='container'>
+          <div className='column has-text-centered'>
+            <h1 className='title is-1'>Hi! I'm Alphonso.</h1>
+            <h2 className='subtitle'>3rd Year Computer Engineering Student at the University of Alberta</h2>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 
